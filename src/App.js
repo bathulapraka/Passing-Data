@@ -1,6 +1,7 @@
 // import logo from "./logo.svg";
 import "./ExpenseItem.css";
 import ExpenseItem from "./ExpenseItem";
+// import ExpenseDetails from "./ExpenseDetails ";
 import React from "react";
 function App() {
   const expenses = [
@@ -25,15 +26,12 @@ function App() {
   ];
   return (
     <div>
-     
-     
-
-      {expenses.map((expense)=>(
+      {expenses.map((expense) => (
         <ExpenseItem
-        key={expense.id}
-        title={expense.title}
-        amount={expense.amount}
-        date={expense.date}
+          key={expense.id}
+          title={expense.title}
+          amount={expense.amount}
+          date={expense.date}
         />
       ))}
     </div>
